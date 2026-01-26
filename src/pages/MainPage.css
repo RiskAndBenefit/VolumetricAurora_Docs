@@ -1,0 +1,190 @@
+.page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  font-family: "Cormorant Garamond", "EB Garamond", Garamond, serif;
+}
+
+.snowCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 18px 28px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0));
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: rgba(245, 245, 245, 0.92);
+}
+
+.nav {
+  display: flex;
+  gap: 18px;
+}
+
+.navLink {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(235, 235, 235, 0.7);
+  text-decoration: none;
+  transition: color 120ms ease;
+}
+
+.navLink:hover {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 24px;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(42px, 5vw, 92px);
+  line-height: 1.02;
+  margin: 0;
+
+  font-weight: 500;
+  letter-spacing: 0.005em;
+
+  color: rgba(245, 245, 245, 0.92);
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+.tagline {
+  margin: 16px 0 0;
+  max-width: 720px;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  color: rgba(230, 230, 230, 0.72);
+}
+
+.ctaRow {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+}
+
+.btnPrimary,
+.btnGhost {
+  height: 42px;
+  padding: 0 16px;
+  border-radius: 14px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+.btnPrimary {
+  background: rgba(245, 245, 245, 0.92);
+  color: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.btnPrimary:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 1);
+}
+
+.btnGhost {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(235, 235, 235, 0.78);
+}
+
+.btnGhost:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* 하단 푸터 */
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 28px;
+
+  font-size: 14px;
+  color: rgba(235, 235, 235, 0.55);
+
+  background: linear-gradient(to top, rgba(0,0,0,0.45), rgba(0,0,0,0));
+}
+
+.footerRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  font-size: 13px;
+  color: rgba(235, 235, 235, 0.72);
+}
+
+.footerLink {
+  text-decoration: none;
+  color: rgba(235, 235, 235, 0.62);
+  transition: color 120ms ease;
+}
+
+.footerLink:hover {
+  color: rgba(255, 255, 255, 0.92);
+}

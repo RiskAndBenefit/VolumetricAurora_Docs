@@ -1,0 +1,161 @@
+.docsPage {
+  min-height: 100vh;
+  background: #07080b;
+  color: rgba(245, 245, 245, 0.92);
+}
+
+.docsHeader {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.35);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.docsHeaderInner {
+  height: 64px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.docsBrand {
+  text-decoration: none;
+  color: rgba(245, 245, 245, 0.92);
+  font-size: 18px;
+  letter-spacing: 0.01em;
+}
+
+.docsNav {
+  display: flex;
+  gap: 14px;
+}
+
+.docsNavLink {
+  text-decoration: none;
+  color: rgba(235, 235, 235, 0.7);
+  transition: color 120ms ease;
+}
+
+.docsNavLink:hover {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.docsMain {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 20px 48px;
+}
+
+.hero {
+  padding: 24px 0 16px;
+}
+
+.heroTitle {
+  margin: 0;
+  font-size: clamp(34px, 4vw, 56px);
+  letter-spacing: 0.01em;
+}
+
+.heroDesc {
+  margin: 14px 0 0;
+  max-width: 820px;
+  line-height: 1.7;
+  color: rgba(230, 230, 230, 0.72);
+}
+
+.heroMeta {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(235, 235, 235, 0.76);
+  font-size: 13px;
+}
+
+.docsGrid {
+  margin-top: 18px;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 820px) {
+  .docsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card,
+.wideCard {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 18px;
+  padding: 18px 18px;
+}
+.wideCard { margin-top: 15px; }
+
+.cardTitle {
+  margin: 0 0 10px;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+}
+
+.list {
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(235, 235, 235, 0.74);
+  line-height: 1.7;
+}
+
+.quickLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.quickLink {
+  text-decoration: none;
+  color: rgba(235, 235, 235, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 10px 12px;
+  border-radius: 14px;
+  transition: transform 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+
+.quickLink:hover {
+  transform: translateY(-1px);
+  color: rgba(255, 255, 255, 0.95);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.docsFooter {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 20px 26px;
+  color: rgba(235, 235, 235, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.docsFooterRight {
+  display: flex;
+  gap: 10px;
+}
