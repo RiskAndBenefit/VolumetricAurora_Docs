@@ -113,5 +113,5 @@ export function useSnowTrail(canvasRef, { throttleMs = 8, maxParticles = 500 } =
       target?.removeEventListener("pointermove", onMove);
       ro.disconnect();
     };
-  }, [throttleMs, maxParticles]);
+  }, [throttleMs, maxParticles]);   // [숫자 키우면 덜 나옴, 숫자 줄이면 덜 누적됨]
 }

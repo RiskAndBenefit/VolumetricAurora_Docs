@@ -7,10 +7,7 @@ import { useSnowTrail } from "../hooks/useSnowTrail";
 export default function MainPage() {
   const canvasRef = useRef(null);
 
-  useSnowTrail(canvasRef, {
-    throttleMs: 8,      // 숫자 키우면 덜 나옴
-    maxParticles: 500,  // 숫자 줄이면 덜 누적됨
-  });
+  useSnowTrail(canvasRef, { throttleMs: 8, maxParticles: 500 });
 
   return (
     <div className="page" style={{ backgroundImage: `url(${bgImage})` }}>

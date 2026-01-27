@@ -1,0 +1,117 @@
+/* ------------------------------
+   Docs Layout (shared)
+------------------------------ */
+
+.docsPage {
+  min-height: 100vh;
+  background: #07080b;
+  color: rgba(245, 245, 245, 0.92);
+
+  --headerH: 64px;
+  --panelW: 380px;
+  --toggleSize: 44px;
+
+  --contentShift: 0px;
+
+  --pagePad: 20px;
+  --contentMax: 1100px;
+}
+
+.docsLayout {
+  padding-left: var(--contentShift);
+  transition: padding-left 260ms ease;
+}
+
+.docsPage[data-sidebar="open"] {
+  --contentShift: var(--panelW);
+}
+
+/* ------------------------------
+   Main / Footer sizing
+------------------------------ */
+
+.docsMain,
+.docsFooter {
+  max-width: min(
+    var(--contentMax),
+    calc(100% - var(--contentShift) - (var(--pagePad) * 2))
+  );
+  margin: 0 auto;
+}
+
+.docsMain {
+  padding: 28px var(--pagePad) 48px;
+}
+
+.docsFooter {
+  padding: 18px var(--pagePad) 26px;
+
+  color: rgba(235, 235, 235, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ------------------------------
+   Header
+------------------------------ */
+
+.docsHeader {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+
+  background: rgba(0, 0, 0, 0.35);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.docsHeaderInner {
+  height: var(--headerH);
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 24px;
+
+  max-width: none;
+  margin: 0;
+}
+
+.docsBrand {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+
+  text-decoration: none;
+  color: rgba(245, 245, 245, 0.92);
+  font-size: 18px;
+}
+
+.docsNav {
+  display: flex;
+  gap: 14px;
+}
+
+.docsNavLink {
+  text-decoration: none;
+  color: rgba(235, 235, 235, 0.7);
+  transition: color 120ms ease;
+}
+
+.docsNavLink:hover {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* ------------------------------
+   Responsive
+------------------------------ */
+
+@media (max-width: 520px) {
+  .docsPage {
+    --panelW: 360px;
+  }
+}
