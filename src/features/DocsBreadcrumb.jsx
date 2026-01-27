@@ -14,7 +14,7 @@ function getSlug(pathname) {
   return parts[1] ?? "";
 }
 
-export default function DocsBreadcrumb() {
+export default function DocsBreadcrumb({ showBrand = false }) {
   const { pathname } = useLocation();
 
   const isDocsRoot = pathname === "/docs" || pathname === "/docs/";
@@ -25,6 +25,15 @@ export default function DocsBreadcrumb() {
   return (
     <div className="topCrumbWrap" role="navigation" aria-label="Breadcrumb">
       <div className="topCrumbInner">
+        {showBrand ? (
+          <>
+            <Link className="crumbBrand" to="/">
+              Volumetric Aurora
+            </Link>
+            <span className="crumbSlash" aria-hidden="true">/</span>
+          </>
+        ) : null}
+
         <Link className="crumbLink" to={QUICK_START_PATH} aria-current={isDocsRoot ? "page" : undefined}>
           Docs
         </Link>

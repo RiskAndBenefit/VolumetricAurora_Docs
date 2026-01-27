@@ -25,11 +25,7 @@ export default function DocsLayout() {
     <div className="docsPage" data-sidebar={sidebarOpen ? "open" : "closed"}>
       <header className="docsHeader">
         <div className="docsHeaderInner">
-          <Link className="docsBrand" to="/">
-            Volumetric Aurora
-          </Link>
-
-          <DocsBreadcrumb />
+          <DocsBreadcrumb showBrand/>
 
           <nav className="docsNav">
             <a className="docsNavLink" href="https://www.fab.com/" target="_blank" rel="noreferrer">

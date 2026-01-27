@@ -1,20 +1,18 @@
 .topCrumbWrap {
-  position: sticky;
-  top: 0;
-  z-index: 40;
+  position: static;
+  top: auto;
+  z-index: auto;
 
-  height: 44px;
+  height: auto;
   display: flex;
   align-items: center;
 }
 
 .topCrumbInner {
-  width: 100%;
   display: flex;
   align-items: center;
   gap: 10px;
-
-  padding: 0 14px;
+  padding: 0;
 
   color: rgba(235, 235, 235, 0.78);
   letter-spacing: 0.08em;
@@ -23,8 +21,18 @@
 }
 
 .crumbBrand {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+
   text-decoration: none;
-  color: rgba(235, 235, 235, 0.78);
+  color: rgba(245, 245, 245, 0.92);
+  font-size: 18px;
+  text-transform: none; /* 브랜드는 대문자 변환 안 하게 */
+}
+
+.crumbSlash {
+  opacity: 0.45;
 }
 
 .crumbLink {
@@ -45,15 +53,6 @@
   line-height: 1;
   font-weight: 600;
   transform: translateY(-1px);
-}
-
-.crumbLinkDisabled {
-  cursor: default;
-  opacity: 0.85;
-}
-
-.crumbLinkDisabled:hover {
-  color: rgba(235, 235, 235, 0.78);
 }
 
 .crumbCurrent {
