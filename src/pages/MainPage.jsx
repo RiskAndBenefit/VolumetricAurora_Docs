@@ -17,7 +17,7 @@ export default function MainPage() {
         <div className="brand">Volumetric Aurora</div>
         <nav className="nav">
           <a className="navLink" href="https://www.fab.com/" target="_blank" rel="noreferrer">Fab</a>
-          <a className="navLink" href="/docs">Docs</a>
+          <a className="navLink" href="docs">Docs</a>
           <a className="navLink" href="#support">Support</a>
         </nav>
       </header>
