@@ -1,0 +1,71 @@
+.hero {
+  --qs-display: var(--font-display);  /* Cinzel */
+  --qs-body: var(--font-body);        /* Cormorant/EB Garamond */
+  --qs-reading: var(--font-reading);  /* Crimson Pro */
+  /* --qs-reading-size: 16px; */
+  
+  font-family: var(--qs-body);
+  font-weight: 300;
+}
+
+.heroTitle {
+  font-size: 50px;
+}
+
+.heroSubTitleSm {
+  margin-top: 38px;
+}
+
+.heroSectionLabel {
+  font-weight: 600;
+}
+
+.heroDesc,
+.heroText,
+.heroList,
+.heroBullets,
+.heroCallout {
+  font-family: var(--qs-reading);
+  font-weight: var(--weight-reading);
+  font-size: var(--qs-reading-size);
+}
+
+.heroCalloutLabel {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-right: 6px;
+  color: rgba(235, 235, 235, 0.5);
+}
+
+.heroDivider {
+  margin: 40px 0px;
+  border: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.05)
+  );
+}
+
+.qsFigure {
+  margin: 18px 0 22px;
+}
+
+.qsImage {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+
+.qsCaption {
+  margin-top: 10px;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(235, 235, 235, 0.55);
+}

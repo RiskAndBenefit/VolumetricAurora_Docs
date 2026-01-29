@@ -1,6 +1,11 @@
 :root {
   --font-display: "Cinzel", serif;
   --font-body: "Cormorant Garamond", "EB Garamond", serif;
+  --font-reading: "Crimson Pro", serif;
+
+  --weight-display: 400;
+  --weight-body: 400;
+  --weight-reading: 200;
 }
 
 *, *::before, *::after {
@@ -17,17 +22,18 @@ html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
+  overscroll-behavior-y: none;
 }
 
 body {
   background: #000;
   font-family: var(--font-body);
-  font-weight: 400;
+  font-weight: var(--weight-body);
 }
 
 :where(h1, h2, h3, h4, h5, h6) {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: var(--weight-display);
   letter-spacing: 0.0em;
   opacity: 0.9;
   margin: 0;
