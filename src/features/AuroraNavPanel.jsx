@@ -19,6 +19,9 @@ export default function AuroraNavPanel({
       <aside className="sidePanel" aria-label="Aurora navigation">
         <div className="sidePanelHeader">
           <div className="sidePanelTop">AURORA NAVIGATION</div>
+          <Link className="sidePanelQuickLink" to="/docs">
+            <span className="sidePanelQuickLinkText">Quick Start</span>
+          </Link>
         </div>
 
         <div className="navCardList">

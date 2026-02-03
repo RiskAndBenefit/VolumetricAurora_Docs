@@ -23,13 +23,13 @@
 }
 
 .sidePanelHeader {
-  padding: 9px 6px;
+  padding: 0px 6px;
 }
 
 .sidePanelTop {
   font-size: 13px;
   letter-spacing: 0.01em;
-  color: rgba(235, 235, 235, 0.5);
+  color: rgba(235, 235, 235, 0.35);
 }
 
 /* cards */
@@ -206,4 +206,49 @@
 .sideToggle:hover::after {
   border-right-color: rgba(245, 245, 245, 0.6);
   border-bottom-color: rgba(245, 245, 245, 0.6);
+}
+
+.sidePanelQuickLink {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+
+  margin-top: 8px;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: rgba(235, 235, 235, 0.85);
+  text-decoration: none;
+}
+
+.sidePanelQuickLink:hover,
+.sidePanelQuickLink:visited,
+.sidePanelQuickLink:active {
+  text-decoration: none;
+}
+
+.sidePanelQuickLink::before {
+  content: "•";
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.8;
+  transform: translateY(1px);
+  color: rgba(235, 235, 235, 0.8);
+}
+
+.sidePanelQuickLinkText {
+  display: inline-block;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(235, 235, 235, 0.65);
+}
+
+.sidePanelQuickLink:hover {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.sidePanelQuickLink:hover .sidePanelQuickLinkText {
+  text-decoration-color: currentColor;
 }

@@ -21,8 +21,7 @@ export default function QuickStartPage() {
       <hr className="heroDivider heroDividerTop" />
 
       {/* 0 */}
-      {/* <h2 className="heroSubTitle">0. ENABLE THE PLUGIN</h2> */}
-      <h2 className="heroSubTitle">0. Enable The Plugin</h2>
+      <h2 className="heroSubTitleSm">0. Enable The Plugin</h2>
       <p className="heroText">First, enable the Volumetric Aurora plugin in the Unreal Editor.</p>
 
       <ol className="heroList">
@@ -41,7 +40,7 @@ export default function QuickStartPage() {
       <hr className="heroDivider" />
 
       {/* 1 */}
-      <h2 className="heroSubTitle">1. Place The Aurora Actor</h2>
+      <h2 className="heroSubTitleSm">1. Place The Aurora Actor</h2>
       <p className="heroText">Once the plugin is loaded, place the aurora actor in your level.</p>
 
       <ol className="heroList">
@@ -74,7 +73,7 @@ export default function QuickStartPage() {
       <hr className="heroDivider" />
 
       {/* 2 */}
-      <h2 className="heroSubTitle">2. Select a Preset</h2>
+      <h2 className="heroSubTitleSm">2. Select a Preset</h2>
       <p className="heroText">To quickly switch to different aurora shapes beyond the default, change the preset.</p>
 
       <ol className="heroList">
@@ -93,7 +92,7 @@ export default function QuickStartPage() {
       <hr className="heroDivider" />
 
       {/* 3 */}
-      <h2 className="heroSubTitle">3. Tune the Parameters</h2>
+      <h2 className="heroSubTitleSm">3. Tune the Parameters</h2>
       <p className="heroText">
         Based on the selected preset, adjust detailed parameters so the aurora blends perfectly with your map’s mood
         and lighting. Settings are divided into common parameters and type-specific parameters.
@@ -155,7 +154,7 @@ export default function QuickStartPage() {
       <hr className="heroDivider" />
 
       {/* 4 */}
-      <h2 className="heroSubTitle">4. Save the Preset</h2>
+      <h2 className="heroSubTitleSm">4. Save the Preset</h2>
       <p className="heroText">You can save your tuned aurora settings as a preset to reuse later or apply to other levels.</p>
 
       <ol className="heroList">
