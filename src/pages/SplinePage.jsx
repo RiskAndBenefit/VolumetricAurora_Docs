@@ -1,4 +1,20 @@
-import "./DocsPage.css";
+import StepImage from "../components/StepImage.jsx";
+
+import img1 from "../assets/spline/1.png";
+import img2 from "../assets/spline/2.png";
+import img3 from "../assets/spline/3.png";
+import img4 from "../assets/spline/4.png";
+import img5 from "../assets/spline/5.png";
+import img6 from "../assets/spline/6.png";
+import img7 from "../assets/spline/7.png";
+import img8 from "../assets/spline/8.png";
+import img9 from "../assets/spline/9.png";
+import img10 from "../assets/spline/10.png";
+import img11 from "../assets/spline/11.png";
+import img12 from "../assets/spline/12.png";
+import img13 from "../assets/spline/13.png";
+import img14 from "../assets/spline/14.png";
+import img15 from "../assets/spline/15.png";
 
 export default function SplinePage() {
   return (
@@ -14,33 +30,36 @@ export default function SplinePage() {
       {/* 1 */}
       <h3 className="heroSubTitleSm">1. Select the Baker Component</h3>
       <p className="heroText">Select the SplineDFTextureBakerComponent.</p>
+      <StepImage src={img1} alt="Select the SplineDFTextureBakerComponent" size="sm" />
 
       <hr className="heroDivider" />
 
       {/* 2 */}
       <h3 className="heroSubTitleSm">2. Focus on the Visualizer</h3>
-      <p className="heroText">
-        Click the &quot;Focus on the visualizer&quot; button.
-      </p>
-      <p className="heroText">
-        Then, a visualizer will appear, showing the DF texture boundary.
-      </p>
-      <p className="heroText">
-        I will explain the exact purpose of this visualizer in more detail later.
-      </p>
+      <p className="heroText">Click the &quot;Focus on the visualizer&quot; button.</p>
+      <StepImage src={img2} alt='Click "Focus on the visualizer" button' size="sm" />
+
+      <p className="heroText">Then, a visualizer will appear, showing the DF texture boundary.</p>
+      <StepImage src={img3} alt="Visualizer appears and shows DF texture boundary" size="lg"/>
+
+      <p className="heroText">I will explain the exact purpose of this visualizer in more detail later.</p>
+
       <p className="heroText">
         It is highly recommended to enable the &quot;Always show Debug Line&quot; flag and lock the Actor&apos;s
         Details Panel.
       </p>
+      <StepImage src={img4} alt='Enable "Always show Debug Line" flag' size="sm" />
+      <StepImage src={img5} alt="Lock the Actor Details Panel" size="sm" />
+
       <p className="heroText">This allows for easier manipulation of the Spline Component.</p>
 
       <hr className="heroDivider" />
 
       {/* 3 */}
       <h3 className="heroSubTitleSm">3. Add Spline Components</h3>
-      <p className="heroText">
-        Add Spline Components by clicking the Add Spline Component button.
-      </p>
+      <p className="heroText">Add Spline Components by clicking the Add Spline Component button.</p>
+      <StepImage src={img6} alt="Add Spline Component button" size="lg" />
+
       <p className="heroText">
         If you are unfamiliar with editing Spline Components in the viewport, we recommend referring to the
         documentation below.
@@ -67,55 +86,55 @@ export default function SplinePage() {
       {/* 4 */}
       <h3 className="heroSubTitleSm">4. Position the Splines</h3>
       <p className="heroText">Position the splines as you like.</p>
-      <p className="heroText">
-        Movement along the Z-axis is restricted for the Spline Components, because we need 2D texture.
-      </p>
-      <p className="heroText">
-        Lines outside the visualizer will not be baked into the texture.
-      </p>
+      <p className="heroText">Movement along the Z-axis is restricted for the Spline Components, because we need 2D texture.</p>
+      <p className="heroText">Lines outside the visualizer will not be baked into the texture.</p>
+      <StepImage src={img7} alt="Position splines within the visualizer boundary" size="lg" />
 
       <hr className="heroDivider" />
 
       {/* 5 */}
       <h3 className="heroSubTitleSm">5. Bake the DF Texture</h3>
-      <p className="heroText">
-        After arranging the splines, click the &quot;Bake DF Texture&quot; button.
-      </p>
+      <p className="heroText">After arranging the splines, click the &quot;Bake DF Texture&quot; button.</p>
+      <StepImage src={img8} alt='Click "Bake DF Texture" button' size="lg" />
 
       <hr className="heroDivider" />
 
       {/* 6 */}
       <h3 className="heroSubTitleSm">6. Save the Baked Texture</h3>
-      <p className="heroText">
-        Enter a name for your new DF texture and click the &quot;Save&quot; button.
-      </p>
-      <p className="heroText">
-        Tip: You can double-click an existing texture to overwrite it.
-      </p>
+      <p className="heroText">Enter a name for your new DF texture and click the &quot;Save&quot; button.</p>
+      <StepImage src={img9} alt='Enter a name and click "Save"' size="sm" />
+      
+      <p className="heroText">Tip: You can double-click an existing texture to overwrite it.</p>
+
       <p className="heroText">
         Disable the &quot;Always show Debug Line&quot; flag and unlock the Actor&apos;s Details Panel.
       </p>
+      <StepImage src={img10} alt='Disable "Always show Debug Line" and unlock Details Panel' size="sm"/>
 
       <hr className="heroDivider" />
 
       {/* 7 */}
       <h3 className="heroSubTitleSm">7. Assign to Your Spline Preset</h3>
-      <p className="heroText">
-        Select the VolumetricAurora actor and click the &quot;Aurora Preset&quot; combo box.
-      </p>
+      <p className="heroText">Select the VolumetricAurora actor and click the &quot;Aurora Preset&quot; combo box.</p>
+      <StepImage src={img11} alt='Select VolumetricAurora actor and open "Aurora Preset" combo box' size="sm"/>
+
       <p className="heroText">
         Select the Spline Preset into which you want to apply new DF texture.
+        <br />
+        <span className="heroNote">(In this example, DefaultSpline preset is selected)</span>
       </p>
-      <p className="heroText">(In this example, DefaultSpline preset is selected)</p>
-      <p className="heroText">
-        Select Noise Texture and the DF texture you just baked.
-      </p>
+      <StepImage src={img12} alt="Select a Spline Preset (DefaultSpline example)" size="sm" />
+
+      <p className="heroText">Select Noise Texture and the DF texture you just baked.</p>
+      <StepImage src={img13} alt="Select Noise Texture" size="sm" />
+      <StepImage src={img14} alt="Select the baked DF texture" size="sm" />
 
       <hr className="heroDivider" />
 
       {/* 8 */}
       <h3 className="heroSubTitleSm">8. Final Check</h3>
       <p className="heroText">That&apos;s it!</p>
+      <StepImage src={img15} alt="Final result" />
     </section>
   );
 }

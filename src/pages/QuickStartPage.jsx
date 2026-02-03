@@ -1,13 +1,12 @@
-import "./DocsPage.css";
+import StepImage from "../components/StepImage.jsx";
 
-function StepImage({ src, alt, caption }) {
-  return (
-    <figure className="qsFigure">
-      <img className="qsImage" src={src} alt={alt} loading="lazy" />
-      {caption ? <figcaption className="qsCaption">{caption}</figcaption> : null}
-    </figure>
-  );
-}
+import Img0 from "../assets/quickstart/image.png";
+import Img1 from "../assets/quickstart/image-1.png";
+import Img2 from "../assets/quickstart/image-2.png";
+import Img3 from "../assets/quickstart/image-3.png";
+import Img4 from "../assets/quickstart/image-4.png";
+import Img5 from "../assets/quickstart/image-5.png";
+import Img6 from "../assets/quickstart/image-6.png";
 
 export default function QuickStartPage() {
   return (
@@ -32,11 +31,12 @@ export default function QuickStartPage() {
         <li>If prompted, click Restart Now to apply the change.</li>
       </ol>
 
-      {/* <StepImage
+      <StepImage
         src={Img0}
         alt="Enable the Volumetric Aurora plugin in the Unreal Editor"
         caption="Enable the plugin (Edit → Plugins)."
-      /> */}
+        size="lg"
+      />
 
       <hr className="heroDivider" />
 
@@ -51,17 +51,19 @@ export default function QuickStartPage() {
         <li>You should immediately see the aurora effect rendered in the viewport.</li>
       </ol>
 
-      {/* <StepImage
+      <StepImage
         src={Img1}
         alt="Locate the Volumetric Aurora actor in the Place Actors panel"
         caption="Find the actor from the placement panel."
+        size="xsm"
       />
 
       <StepImage
         src={Img2}
         alt="Volumetric Aurora actor placed in the level and visible in the viewport"
         caption="After placing, the aurora should appear in the viewport."
-      /> */}
+        size="xmd"
+      />
 
       <p className="heroCallout">
         <span className="heroCalloutLabel">Troubleshooting:</span> If the aurora is not visible or looks too faint after
@@ -81,11 +83,12 @@ export default function QuickStartPage() {
         <li>Choose a preset such as DefaultNoise, DefaultSpline, or DefaultFlow from the dropdown.</li>
       </ol>
 
-      {/* <StepImage
+      <StepImage
         src={Img3}
         alt="Aurora Preset dropdown in the Details panel"
         caption="Pick a preset from Aurora → Aurora Preset."
-      /> */}
+        size="xmd"
+      />
 
       <hr className="heroDivider" />
 
@@ -120,11 +123,11 @@ export default function QuickStartPage() {
         <li>Speed: Controls flow direction and speed using X and Y values.</li>
       </ul>
 
-      {/* <StepImage
+      <StepImage
         src={Img4}
         alt="Overview of Volumetric Aurora parameters in the Details panel"
         caption="Most tuning happens in the Details panel."
-      /> */}
+      />
 
       <h3 className="heroSubTitleSm">3-2. Type-Specific Settings</h3>
       <p className="heroText">
@@ -143,11 +146,11 @@ export default function QuickStartPage() {
         For settings specific to other aurora types, refer to each type’s dedicated documentation page.
       </p>
 
-      {/* <StepImage
+      <StepImage
         src={Img5}
         alt="Type-specific parameter section for the selected aurora preset"
         caption="Type-specific settings appear depending on the preset."
-      /> */}
+      />
 
       <hr className="heroDivider" />
 
@@ -168,11 +171,12 @@ export default function QuickStartPage() {
 
       <p className="heroText">After saving, the new preset will appear in the Aurora Preset dropdown list.</p>
 
-      {/* <StepImage 
+      <StepImage 
         src={Img6} 
         alt="Save and Save As actions for aurora presets" 
         caption="Save your tuned settings as a preset." 
-      /> */}
+        size="xsm"
+      />
 
       <p className="heroCallout">
         <span className="heroCalloutLabel">Warning:</span> Default presets included with the plugin are protected and

@@ -58,22 +58,33 @@
   margin-top: 20px;
 }
 
-.qsFigure {
-  margin: 18px 0 22px;
-}
+.qsFigure { margin: 18px 0 22px; }
+.qsFigure.isXsm .qsImage { max-width: 350px; }
+.qsFigure.isSm .qsImage { max-width: 520px; }
+.qsFigure.isXmd .qsImage { max-width: 610px; }
+.qsFigure.isMd .qsImage { max-width: 700px; }
+.qsFigure.isLg .qsImage { max-width: 980px; }
 
 .qsImage {
   width: 100%;
+  height: auto;
   display: block;
-  border-radius: 12px;
+  margin: 0 auto;
   border: 1px solid rgba(255, 255, 255, 0.10);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
 }
 
 .qsCaption {
   margin-top: 10px;
+  text-align: center;
+  line-height: 1.35;
+
   font-size: 13px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: rgba(235, 235, 235, 0.55);
+}
+
+.qsFigure + .qsFigure {
+  margin-top: 10px;
 }
