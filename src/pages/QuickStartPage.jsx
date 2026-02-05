@@ -1,4 +1,5 @@
 import StepImage from "../components/StepImage.jsx";
+// import AlignedStepImage from "../components/AlignedStepImage.jsx";
 
 import Img0 from "../assets/quickstart/image.png";
 import Img1 from "../assets/quickstart/image-1.png";
@@ -7,6 +8,18 @@ import Img3 from "../assets/quickstart/image-3.png";
 import Img4 from "../assets/quickstart/image-4.png";
 import Img5 from "../assets/quickstart/image-5.png";
 import Img6 from "../assets/quickstart/image-6.png";
+
+import AuroraPlugin from "../assets/quickstart/AuroraPlugin.png"
+import PlaceActorsAdd from "../assets/quickstart/PlaceActorsAdd.png";
+import QuicklyAdd from "../assets/quickstart/QuicklyAdd.png";
+import PresetDetail from "../assets/quickstart/PresetDetail.png";
+import NoiseSettings from "../assets/quickstart/NoiseSettings.png";
+import SplineSettings from "../assets/quickstart/SplineSettings.png";
+import FlowSettings from "../assets/quickstart/FlowSettings.png";
+import PresetSelection from "../assets/quickstart/PresetSelection.png"
+import SavePreset from "../assets/quickstart/SavePreset.png"
+
+import AuroraPlacementGif from "../assets/quickstart/AuroraActorPlacement.gif"
 
 export default function QuickStartPage() {
   return (
@@ -31,7 +44,7 @@ export default function QuickStartPage() {
       </ol>
 
       <StepImage
-        src={Img0}
+        src={AuroraPlugin}
         alt="Enable the Volumetric Aurora plugin in the Unreal Editor"
         caption="Enable the plugin (Edit → Plugins)."
         size="lg"
@@ -45,24 +58,69 @@ export default function QuickStartPage() {
 
       <ol className="heroList">
         <li>Open the actor placement panel (Quickly add to project, or Window &gt; Place Actors).</li>
-        <li>In the search box, type “Volumetric Aurora”.</li>
-        <li>Drag the Volumetric Aurora actor into the viewport at the desired location.</li>
-        <li>You should immediately see the aurora effect rendered in the viewport.</li>
+        <li>In the search box, type "Volumetric Aurora".</li>
       </ol>
 
+      {/* <div style={{
+        display: 'flex',
+        gap: '1rem',
+        justifyContent: 'center',
+        alignItems: 'stretch'
+      }}>
+        <div>
+          <StepImage
+            src={QuicklyAdd}
+            alt="Quickly add to project panel showing VolumetricAurora"
+            caption="Option 1: Quickly add to project (Shift+Tab)"
+            size="xsm"
+          />
+        </div>
+        <div>
+          <AlignedStepImage
+            src={PlaceActorsAdd}
+            alt="Place Actors panel with Volumetric Aurora search"
+            caption="Option 2: Window &gt; Place Actors"
+            size="xsm"
+            spacer="18px"
+          />
+        </div>
+      </div> */}
+
       <StepImage
-        src={Img1}
-        alt="Locate the Volumetric Aurora actor in the Place Actors panel"
-        caption="Find the actor from the placement panel."
+        src={QuicklyAdd}
+        alt="Quickly add to project panel showing VolumetricAurora"
+        caption="Option 1: Quickly add to project (Shift+Tab)"
         size="xsm"
       />
 
       <StepImage
+        src={PlaceActorsAdd}
+        alt="Place Actors panel with Volumetric Aurora search"
+        caption="Option 2: Window &gt; Place Actors"
+        size="xsm"
+      />
+
+      <ol className="heroList" start="3">
+        <li>Drag the Volumetric Aurora actor into the viewport at the desired location.</li>
+      </ol>
+
+      <StepImage
+        src={AuroraPlacementGif}
+        alt="Drag the Volumetric Aurora actor into the viewport"
+        caption="Drag the actor into your level."
+        size="md"
+      />
+
+      <ol className="heroList" start="4">
+        <li>You should immediately see the aurora effect rendered in the viewport.</li>
+      </ol>
+
+      {/* <StepImage
         src={Img2}
         alt="Volumetric Aurora actor placed in the level and visible in the viewport"
         caption="After placing, the aurora should appear in the viewport."
         size="xmd"
-      />
+      /> */}
 
       <p className="heroCallout">
         <span className="heroCalloutLabel">Troubleshooting:</span> If the aurora is not visible or looks too faint after
@@ -83,7 +141,7 @@ export default function QuickStartPage() {
       </ol>
 
       <StepImage
-        src={Img3}
+        src={PresetSelection}
         alt="Aurora Preset dropdown in the Details panel"
         caption="Pick a preset from Aurora → Aurora Preset."
         size="xmd"
@@ -123,7 +181,7 @@ export default function QuickStartPage() {
       </ul>
 
       <StepImage
-        src={Img4}
+        src={PresetDetail}
         alt="Overview of Volumetric Aurora parameters in the Details panel"
         caption="Most tuning happens in the Details panel."
       />
@@ -146,7 +204,17 @@ export default function QuickStartPage() {
       </p>
 
       <StepImage
-        src={Img5}
+        src={NoiseSettings}
+        alt="Type-specific parameter section for the selected aurora preset"
+      />
+
+      <StepImage
+        src={SplineSettings}
+        alt="Type-specific parameter section for the selected aurora preset"
+      />
+
+      <StepImage
+        src={FlowSettings}
         alt="Type-specific parameter section for the selected aurora preset"
         caption="Type-specific settings appear depending on the preset."
       />
@@ -171,10 +239,10 @@ export default function QuickStartPage() {
       <p className="heroText">After saving, the new preset will appear in the Aurora Preset dropdown list.</p>
 
       <StepImage 
-        src={Img6} 
+        src={SavePreset} 
         alt="Save and Save As actions for aurora presets" 
         caption="Save your tuned settings as a preset." 
-        size="xsm"
+        size="md"
       />
 
       <p className="heroCallout">
