@@ -1,6 +1,24 @@
 import "./DocsPage.css";
 import "./FlowPage.css";
+import StepImage from "../components/StepImage.jsx";
 import DebugSpheres2D from "../components/DebugSpheres2D.jsx";
+
+import ResetFlowButton from "../assets/flow/ResetFlowButton.png";
+import ElementMap from "../assets/flow/ElementMap.png";
+import EditElementsMapButton from "../assets/flow/EditElementMapButton.png";
+import EditElementsMapUI from "../assets/flow/EditElementMapUI.png";
+import BrushToolExample from "../assets/flow/BrushToolSection.png";
+import CanvasPreview1 from "../assets/flow/CanvasPreviewExample1.png";
+import CanvasPreview2 from "../assets/flow/CanvasPreviewExample2.png";
+import SaveSaveAs from "../assets/flow/SaveSaveAs.png";
+import AuroraCurtainImg from "../assets/flow/AuroraCurtain.jpg";
+import ExtentHeightImg from "../assets/flow/ExtentHeight.png";
+import CurtainExampleImg from "../assets/flow/CurtainExample.png";
+import CurlExampleImg from "../assets/flow/CurlExample.png";
+import ResultExampleImg from "../assets/flow/ResultExample.png";
+import CaptureButtonImg from "../assets/flow/CaptureCurrentState.png";
+import CheckpointTexture1Img from "../assets/flow/CheckpointTextureExample.png";
+import CheckpointTexture2Img from "../assets/flow/CheckpointTextureExample2.png";
 
 export default function FlowPage() {
   return (
@@ -71,11 +89,12 @@ export default function FlowPage() {
       <h3 className="heroSubTitleSm">Reset Button</h3>
       <p className="heroText">Pressing this button restarts the aurora simulation from the beginning.</p>
 
-      {/* <StepImage
-        src={ResetButtonImg}
-        alt="Reset button example"
-        caption="Press Reset to restart the simulation."
-      /> */}
+      <StepImage
+        src={ResetFlowButton}
+        alt="Reset button in the Details panel"
+        caption="Press Reset to restart the simulation"
+        size="sm"
+      />
 
       <h3 className="heroSubTitleSm">Basic Parameters</h3>
 
@@ -104,6 +123,18 @@ export default function FlowPage() {
               <td>
                 Enables debug visualization of Control Point influence ranges. If disabled, individual range displays
                 will not be shown even if enabled.
+              </td>
+            </tr>
+            <tr>
+              <td>Display Size</td>
+              <td>
+                Controls the size of debug visualization spheres for Control Points.
+              </td>
+            </tr>
+            <tr>
+              <td>Display ZPos</td>
+              <td>
+                Controls the Z-axis position of debug visualization for Control Points.
               </td>
             </tr>
             <tr>
@@ -184,11 +215,12 @@ export default function FlowPage() {
         </table>
       </div>
 
-      {/* <StepImage
-        src={ElementsMapExampleImg}
-        alt="Elements Map example"
-        caption="Elements Map example."
-      /> */}
+      <StepImage
+        src={ElementMap}
+        alt="Aurora Elements Map with R, G, B channels"
+        caption="Elements Map with RGB channels"
+        size="md"
+      />
 
       <h3 className="heroSubTitleSm">Editing the Elements Map</h3>
       <p className="heroText">
@@ -196,16 +228,18 @@ export default function FlowPage() {
         button to open the Elements Map editing interface.
       </p>
 
-      {/* <StepImage
-        src={EditElementsMapButtonImg}
-        alt="Edit Elements Map button"
-        caption="Click Edit Elements Map."
+      <StepImage
+        src={EditElementsMapButton}
+        alt="Edit Elements Map button in the Details panel"
+        caption="Click Edit Elements Map button"
+        size="sm"
       />
       <StepImage
-        src={EditElementsMapUIImg}
-        alt="Edit Elements Map UI"
-        caption="Elements Map editing UI."
-      /> */}
+        src={EditElementsMapUI}
+        alt="Elements Map editing UI with preview, canvas, and brush settings"
+        caption="Elements Map editing interface"
+        size="lg"
+      />
 
       <p className="heroText">The UI consists of three areas:</p>
 
@@ -236,11 +270,12 @@ export default function FlowPage() {
 
       <h3 className="heroSubTitleSm">Brush Settings</h3>
 
-      {/* <StepImage
-        src={BrushToolExampleImg}
-        alt="Brush tool example"
-        caption="Brush settings."
-      /> */}
+      <StepImage
+        src={BrushToolExample}
+        alt="Brush tool settings panel"
+        caption="Brush settings panel"
+        size="lg"
+      />
 
       <div className="heroTableWrap">
         <table className="heroTable">
@@ -272,6 +307,10 @@ export default function FlowPage() {
               <td>Resets the entire canvas to black.</td>
             </tr>
             <tr>
+              <td>Reset</td>
+              <td>Restores the canvas to the current simulation state, undoing all unsaved edits.</td>
+            </tr>
+            <tr>
               <td>Brush Size</td>
               <td>Controls the size of the brush.</td>
             </tr>
@@ -296,15 +335,139 @@ export default function FlowPage() {
         As you paint on the canvas, the preview area updates in real time to show how the Elements Map affects the
         aurora.
       </p>
+
+      <StepImage
+        src={CanvasPreview1}
+        alt="Canvas with brush painting and live preview"
+        size="xsm"
+      />
+
+      <StepImage
+        src={CanvasPreview2}
+        alt="Canvas with brush painting and live preview"
+        caption="Real-time preview while painting"
+        size="xsm"
+      />
+
       <p className="heroText">
-        When finished, click Bake to Texture Asset to apply your changes. The resulting texture is saved to:
+        When finished, save your work using one of the following options:
+      </p>
+
+      <ul className="heroBullets">
+        <li>
+          <strong>Save:</strong> Overwrites the currently loaded Elements Map texture with your changes.
+        </li>
+        <li>
+          <strong>Save As:</strong> Creates a new texture file with a custom name, preserving the original.
+        </li>
+      </ul>
+
+      <StepImage
+        src={SaveSaveAs}
+        alt="Save and Save As buttons in the Elements Map editor"
+        caption="Save and Save As buttons"
+        size="sm"
+      />
+
+      <p className="heroText">
+        Textures are saved to:
       </p>
 
       <pre className="heroCode">
         <code>VolumetricAurora/Textures/FlowElementMap</code>
       </pre>
 
-      <p className="heroText">The Flow Aurora Preset will reference this texture automatically.</p>
+      <p className="heroText">The Flow Aurora Preset will reference the saved texture automatically.</p>
+
+      <hr className="heroDivider" />
+
+      {/* CAPTURE CURRENT STATE */}
+      <h2 className="heroSubTitle">Capture Current State</h2>
+
+      <h3 className="heroSubTitleSm">Overview</h3>
+      <p className="heroText">
+        Flow Aurora <strong>starts its simulation from the initial state</strong> every time you launch the editor or
+        run PIE (Play In Editor). This means particles begin from scratch and gradually evolve into the full aurora
+        shape.
+      </p>
+
+      <p className="heroText">
+        While this is natural behavior, it can be inconvenient if you want to <strong>display a fully-formed aurora
+        immediately at game start</strong>.
+      </p>
+
+      <p className="heroText">
+        To solve this, Flow Aurora provides a <strong>Capture feature</strong>. The Capture feature{" "}
+        <strong>saves a snapshot of the simulation at a specific moment</strong>, allowing the aurora to start from
+        that point in subsequent runs.
+      </p>
+
+      <h3 className="heroSubTitleSm">How to Use Capture</h3>
+
+      <p className="heroSectionLabel">1. Run Simulation to Desired State</p>
+      <p className="heroText">In the editor, run the aurora and wait until it reaches the shape you want to save.</p>
+
+      <p className="heroSectionLabel">2. Click Capture Button</p>
+      <p className="heroText">In the Details panel, click the <strong>Capture Current Simulation</strong> button.</p>
+
+      <StepImage
+        src={CaptureButtonImg}
+        alt="Capture Current Simulation button in Details panel"
+        caption="Location of the Capture button in Details panel"
+        size="sm"
+      />
+
+      <p className="heroSectionLabel">3. Verify Save</p>
+      <p className="heroText">
+        If the capture succeeds, a texture will be created at the following location in the Details panel:
+      </p>
+
+      <pre className="heroCode">
+        <code>Aurora → Preset Details → Flow Settings → Simulation Checkpoint Texture</code>
+      </pre>
+
+      <StepImage
+        src={CheckpointTexture1Img}
+        alt="Generated Checkpoint Texture entry in Details panel"
+        caption="Generated Checkpoint Texture entry"
+        size="sm"
+      />
+
+      <p className="heroSectionLabel">4. Inspect Captured Data</p>
+      <p className="heroText">
+        Double-click the Checkpoint Texture to open it in the texture editor. You'll see the particle position data
+        from the capture moment stored as a texture.
+      </p>
+
+      <StepImage
+        src={CheckpointTexture2Img}
+        alt="Texture containing the captured simulation state"
+        caption="Texture containing the captured simulation state"
+        size="md"
+      />
+
+      <p className="heroCallout">
+        <span className="heroCalloutLabel">💾 Save Location:</span> Checkpoint Textures are automatically saved to:
+        <code className="heroInlineCode">\Plugins\VolumetricAurora\Content\Textures\FlowCheckpoints\</code>
+      </p>
+
+      <h3 className="heroSubTitleSm">Result</h3>
+      <p className="heroText">
+        Now when you restart the editor or run PIE, the aurora will <strong>appear immediately from the captured
+        state</strong>.
+      </p>
+
+      <h3 className="heroSubTitleSm">Tips</h3>
+      <ul className="heroBullets">
+        <li>
+          <strong>Included in Presets:</strong> Checkpoint Textures are saved with Aurora Presets, so the captured
+          state is preserved when you save a preset.
+        </li>
+        <li>
+          <strong>Reset to Initial:</strong> Clear the Checkpoint Texture entry to restart the simulation from the
+          initial state.
+        </li>
+      </ul>
 
       <hr className="heroDivider" />
 
@@ -888,33 +1051,36 @@ export default function FlowPage() {
         curtain-style aurora.
       </p>
 
-      {/* <StepImage
+      <StepImage
         src={AuroraCurtainImg}
-        alt="Aurora curtain reference"
-        caption="Curtain-style aurora reference."
-      /> */}
+        alt="Real aurora curtain photograph"
+        caption="Curtain-style aurora reference"
+        size="lg"
+      />
 
       <p className="heroText">
         The default value of AuroraAreaExtent is 50 (based on Noise Type presets), but Flow Type auroras often look
         better with a smaller volume. Adjust the value accordingly and set Simulation Resolution to 2048.
       </p>
 
-      {/* <StepImage
+      <StepImage
         src={ExtentHeightImg}
-        alt="Extent and height settings"
-        caption="Adjust extent and set Simulation Resolution to 2048."
-      /> */}
+        alt="Aurora area extent and simulation resolution settings"
+        caption="Adjust extent and set Simulation Resolution to 2048"
+        size="sm"
+      />
 
       <p className="heroText">
         Define high-density (0.7–0.9) red Emitter regions in the Elements Map. Use a small brush size (25–50) and apply
         the paint as dotted points.
       </p>
 
-      {/* <StepImage
-        src={CurtainExImg}
-        alt="Elements Map emitter dots example"
-        caption="Paint high-density red emitter dots."
-      /> */}
+      <StepImage
+        src={CurtainExampleImg}
+        alt="Elements Map with red emitter dots creating curtain shape"
+        caption="Paint high-density red emitter dots"
+        size="lg"
+      />
 
       <p className="heroText">
         Next, create two Curl Control Points:
@@ -924,16 +1090,18 @@ export default function FlowPage() {
         <li>Use the second Curl to create broader turbulence for overall curtain motion</li>
       </ul>
 
-      {/* <StepImage
-        src={CurlExImg}
-        alt="Curl control points example"
-        caption="Use two Curl points: dense folds and broad motion."
+      <StepImage
+        src={CurlExampleImg}
+        alt="Curl control points settings in Details panel"
+        caption="Two Curl points: dense folds and broad motion"
+        size="md"
       />
       <StepImage
-        src={ResultExImg}
-        alt="Result example"
-        caption="Result example."
-      /> */}
+        src={ResultExampleImg}
+        alt="Final curtain-style aurora result"
+        caption="Final curtain aurora result"
+        size="lg"
+      />
 
       <p className="heroText">
         Finally, experiment by applying additional Control Points such as Vortex, Source, and Sink to further enrich

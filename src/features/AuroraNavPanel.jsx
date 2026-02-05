@@ -22,6 +22,9 @@ export default function AuroraNavPanel({
           <Link className="sidePanelQuickLink" to="/docs">
             <span className="sidePanelQuickLinkText">Quick Start</span>
           </Link>
+          <Link className="sidePanelQuickLink" to="/docs/common-parameters">
+            <span className="sidePanelQuickLinkText">Common Parameters</span>
+          </Link>
         </div>
 
         <div className="navCardList">
