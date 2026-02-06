@@ -1,19 +1,8 @@
 import StepImage from "../components/StepImage.jsx";
 
-// import img1 from "../assets/spline/1.png";
-import img2 from "../assets/spline/2.png";
 import img3 from "../assets/spline/3.png";
-import img4 from "../assets/spline/4.png";
-import img5 from "../assets/spline/5.png";
 import img6 from "../assets/spline/6.png";
 import img7 from "../assets/spline/7.png";
-import img8 from "../assets/spline/8.png";
-import img9 from "../assets/spline/9.png";
-import img10 from "../assets/spline/10.png";
-import img11 from "../assets/spline/11.png";
-import img12 from "../assets/spline/12.png";
-import img13 from "../assets/spline/13.png";
-import img14 from "../assets/spline/14.png";
 import img15 from "../assets/spline/15.png";
 
 import BakerComponent from "../assets/spline/BakerComponent.png";

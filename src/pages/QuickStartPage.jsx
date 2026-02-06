@@ -1,14 +1,6 @@
 import StepImage from "../components/StepImage.jsx";
 // import AlignedStepImage from "../components/AlignedStepImage.jsx";
 
-import Img0 from "../assets/quickstart/image.png";
-import Img1 from "../assets/quickstart/image-1.png";
-import Img2 from "../assets/quickstart/image-2.png";
-import Img3 from "../assets/quickstart/image-3.png";
-import Img4 from "../assets/quickstart/image-4.png";
-import Img5 from "../assets/quickstart/image-5.png";
-import Img6 from "../assets/quickstart/image-6.png";
-
 import AuroraPlugin from "../assets/quickstart/AuroraPlugin.png"
 import PlaceActorsAdd from "../assets/quickstart/PlaceActorsAdd.png";
 import QuicklyAdd from "../assets/quickstart/QuicklyAdd.png";
