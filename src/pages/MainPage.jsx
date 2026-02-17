@@ -16,7 +16,7 @@ export default function MainPage() {
       <header className="topbar">
         <div className="brand">Volumetric Aurora</div>
         <nav className="nav">
-          <a className="navLink" href="https://www.fab.com/" target="_blank" rel="noreferrer">Fab</a>
+          <a className="navLink" href="https://www.fab.com/ko/listings/57cba704-cfa8-4014-b6c2-b582822ce3fc" target="_blank" rel="noreferrer">Fab</a>
           <Link className="navLink" to="/docs">Docs</Link>
           <a className="navLink" href="#support">Support</a>
         </nav>
@@ -28,7 +28,7 @@ export default function MainPage() {
 
         <div className="ctaRow">
           <Link className="btnPrimary" to="/docs">Documentation</Link>
-          <a className="btnGhost" href="https://www.fab.com/" target="_blank" rel="noreferrer">
+          <a className="btnGhost" href="https://www.fab.com/ko/listings/57cba704-cfa8-4014-b6c2-b582822ce3fc" target="_blank" rel="noreferrer">
             View on Fab
           </a>
         </div>
@@ -38,7 +38,7 @@ export default function MainPage() {
         <div className="footerLeft">© 2026 Volumetric Aurora</div>
         <div className="footerRight">
           <span className="badge">UE 5.6+</span>
-          <a className="footerLink" href="https://github.com/RiskAndBenefit/VolumetricAurora/issues" target="_blank" rel="noreferrer">Issues</a>
+          <span className="badge">By R&B</span>
         </div>
       </footer>
 

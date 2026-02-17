@@ -14,13 +14,13 @@ export default function NoisePage() {
       <hr className="heroDivider heroDividerTop" />
 
       {/* NOISE SETTINGS */}
-      <h2 className="heroSubTitle">Noise Settings</h2>
+      <h2 className="heroSubTitle">NOISE SETTINGS</h2>
       <p className="heroText">
         Noise Aurora uses two noise layers: shape noise for the primary curtain folds, and mask noise for creating
         gaps and organic variation.
       </p>
 
-      <h3 className="heroSubTitleSm">Shape Noise</h3>
+      <h3 className="heroSubTitleSm">SHAPE NOISE</h3>
       <p className="heroText">
         The shape noise creates the primary curtain folds and ripples that define the aurora's characteristic form.
       </p>
@@ -59,7 +59,7 @@ export default function NoisePage() {
         </table>
       </div>
 
-      <h3 className="heroSubTitleSm">Mask Noise</h3>
+      <h3 className="heroSubTitleSm">MASK NOISE</h3>
       <p className="heroText">
         The mask noise creates gaps, breaks, and variations in the aurora for a more organic, realistic appearance.
       </p>
@@ -101,12 +101,12 @@ export default function NoisePage() {
       <hr className="heroDivider" />
 
       {/* USAGE TIPS */}
-      <h2 className="heroSubTitle">Usage Tips</h2>
+      <h2 className="heroSubTitle">USAGE TIPS</h2>
       <p className="heroText">
         Practical techniques for creating effective Noise Aurora effects.
       </p>
 
-      <h3 className="heroSubTitleSm">Creating Natural Curtain Motion</h3>
+      <h3 className="heroSubTitleSm">CREATING NATURAL CURTAIN MOTION</h3>
       <ul className="heroBullets">
         <li>
           <strong>Slow Movement:</strong> Keep scroll velocities small (default 0.001 works well) for natural,
@@ -122,7 +122,7 @@ export default function NoisePage() {
         </li>
       </ul>
 
-      <h3 className="heroSubTitleSm">Balancing Shape and Mask</h3>
+      <h3 className="heroSubTitleSm">BALANCING SHAPE AND MASK</h3>
       <ul className="heroBullets">
         <li>
           <strong>High Density + High Mask Opacity:</strong> Creates well-defined curtain bands with clear gaps between
@@ -138,7 +138,7 @@ export default function NoisePage() {
         </li>
       </ul>
 
-      <h3 className="heroSubTitleSm">Fine-Tuning the Curtain</h3>
+      <h3 className="heroSubTitleSm">FINE-TUNING THE CURTAIN</h3>
       <ul className="heroBullets">
         <li>
           <strong>Sharp Folds:</strong> Use low Smoothness (0.1–0.2) with moderate to high Shape Frequency (0.8–1.5)

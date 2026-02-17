@@ -26,7 +26,7 @@ export default function QuickStartPage() {
       <hr className="heroDivider heroDividerTop" />
 
       {/* 0 */}
-      <h2 className="heroSubTitleSm">0. Enable The Plugin</h2>
+      <h2 className="heroSubTitleSm">0. ENABLE THE PLUGIN</h2>
       <p className="heroText">First, enable the Volumetric Aurora plugin in the Unreal Editor.</p>
 
       <ol className="heroList">
@@ -45,7 +45,7 @@ export default function QuickStartPage() {
       <hr className="heroDivider" />
 
       {/* 1 */}
-      <h2 className="heroSubTitleSm">1. Place The Aurora Actor</h2>
+      <h2 className="heroSubTitleSm">1. PLACE THE AURORA ACTOR</h2>
       <p className="heroText">Once the plugin is loaded, place the aurora actor in your level.</p>
 
       <ol className="heroList">
@@ -123,7 +123,7 @@ export default function QuickStartPage() {
       <hr className="heroDivider" />
 
       {/* 2 */}
-      <h2 className="heroSubTitleSm">2. Select a Preset</h2>
+      <h2 className="heroSubTitleSm">2. SELECT A PRESET</h2>
       <p className="heroText">To quickly switch to different aurora shapes beyond the default, change the preset.</p>
 
       <ol className="heroList">
@@ -142,13 +142,13 @@ export default function QuickStartPage() {
       <hr className="heroDivider" />
 
       {/* 3 */}
-      <h2 className="heroSubTitleSm">3. Tune the Parameters</h2>
+      <h2 className="heroSubTitleSm">3. TUNE THE PARAMETERS</h2>
       <p className="heroText">
         Based on the selected preset, adjust detailed parameters so the aurora blends perfectly with your map’s mood
         and lighting. Settings are divided into common parameters and type-specific parameters.
       </p>
 
-      <h3 className="heroSubTitleSm">3-1. Common Settings</h3>
+      <h3 className="heroSubTitleSm">3-1. COMMON SETTINGS</h3>
       <p className="heroText">These are the baseline mood and placement controls shared by all aurora types.</p>
 
       <p className="heroSectionLabel">Position and Shape</p>
@@ -178,7 +178,7 @@ export default function QuickStartPage() {
         caption="Most tuning happens in the Details panel."
       />
 
-      <h3 className="heroSubTitleSm">3-2. Type-Specific Settings</h3>
+      <h3 className="heroSubTitleSm">3-2. TYPE-SPECIFIC SETTINGS</h3>
       <p className="heroText">
         Depending on the selected Aurora Preset, type-specific parameters become available in the lower part of the
         Details panel.
@@ -214,7 +214,7 @@ export default function QuickStartPage() {
       <hr className="heroDivider" />
 
       {/* 4 */}
-      <h2 className="heroSubTitleSm">4. Save the Preset</h2>
+      <h2 className="heroSubTitleSm">4. SAVE THE PRESET</h2>
       <p className="heroText">You can save your tuned aurora settings as a preset to reuse later or apply to other levels.</p>
 
       <ol className="heroList">

@@ -1,15 +1,17 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import { useMemo, useState } from "react";
 import DocsBreadcrumb from "../features/DocsBreadcrumb";
 import AuroraNavPanel from "../features/AuroraNavPanel";
+import useScrollToTop from "../hooks/useScrollToTop";
 
-import NoiseAuroraImg from "../assets/Noise.png";
-import SplineAuroraImg from "../assets/Spline.png";
-import FlowAuroraImg from "../assets/Flow.png";
+import NoiseAuroraImg from "../assets/HighResNoise.png";
+import SplineAuroraImg from "../assets/HighResSpline.png";
+import FlowAuroraImg from "../assets/HighResFlow.png";
 
 import "./DocsLayout.css";
 
 export default function DocsLayout() {
+  useScrollToTop();
   const [sidebarOpen, setSidebarOpen] = useState(true);
 
   const items = useMemo(

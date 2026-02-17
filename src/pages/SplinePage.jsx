@@ -28,7 +28,7 @@ export default function SplinePage() {
       <hr className="heroDivider heroDividerTop" />
 
       {/* 1 */}
-      <h3 className="heroSubTitleSm">1. Select the Baker Component</h3>
+      <h3 className="heroSubTitleSm">1. SELECT THE BAKER COMPONENT</h3>
       <p className="heroText">Select the SplineDFTextureBakerComponent.</p>
       {/* <StepImage src={img1} alt="Select the SplineDFTextureBakerComponent" size="sm" /> */}
       <StepImage src={BakerComponent} alt="Select the SplineDFTextureBakerComponent" size="sm" />
@@ -36,7 +36,7 @@ export default function SplinePage() {
       <hr className="heroDivider" />
 
       {/* 2 */}
-      <h3 className="heroSubTitleSm">2. Focus on the Visualizer</h3>
+      <h3 className="heroSubTitleSm">2. FOCUS ON THE VISUALIZER</h3>
       <p className="heroText">Click the &quot;Focus on the visualizer&quot; button.</p>
       {/* <StepImage src={img2} alt='Click "Focus on the visualizer" button' size="sm" /> */}
       <StepImage src={FocusVisualizer} alt='Click "Focus on the visualizer" button' size="sm" />
@@ -60,7 +60,7 @@ export default function SplinePage() {
       <hr className="heroDivider" />
 
       {/* 3 */}
-      <h3 className="heroSubTitleSm">3. Add Spline Components</h3>
+      <h3 className="heroSubTitleSm">3. ADD SPLINE COMPONENTS</h3>
       <p className="heroText">Add Spline Components by clicking the Add Spline Component button.</p>
       <StepImage src={img6} alt="Add Spline Component button" size="lg" />
 
@@ -88,7 +88,7 @@ export default function SplinePage() {
       <hr className="heroDivider" />
 
       {/* 4 */}
-      <h3 className="heroSubTitleSm">4. Position the Splines</h3>
+      <h3 className="heroSubTitleSm">4. POSITION THE SPLINES</h3>
       <p className="heroText">Position the splines as you like.</p>
       <p className="heroText">Movement along the Z-axis is restricted for the Spline Components, because we need 2D texture.</p>
       <p className="heroText">Lines outside the visualizer will not be baked into the texture.</p>
@@ -97,7 +97,7 @@ export default function SplinePage() {
       <hr className="heroDivider" />
 
       {/* 5 */}
-      <h3 className="heroSubTitleSm">5. Bake the DF Texture</h3>
+      <h3 className="heroSubTitleSm">5. BAKE THE DF TEXTURE</h3>
       <p className="heroText">After arranging the splines, click the &quot;Bake DF Texture&quot; button.</p>
       {/* <StepImage src={img8} alt='Click "Bake DF Texture" button' size="lg" /> */}
       <StepImage src={BakeDFTexture} alt='Click "Bake DF Texture" button' size="sm" />
@@ -105,7 +105,7 @@ export default function SplinePage() {
       <hr className="heroDivider" />
 
       {/* 6 */}
-      <h3 className="heroSubTitleSm">6. Save the Baked Texture</h3>
+      <h3 className="heroSubTitleSm">6. SAVE THE BAKED TEXTURE</h3>
       <p className="heroText">Enter a name for your new DF texture and click the &quot;Save&quot; button.</p>
       {/* <StepImage src={img9} alt='Enter a name and click "Save"' size="sm" /> */}
       <StepImage src={SaveTextureAs} alt='Enter a name and click "Save"' size="sm" />
@@ -122,7 +122,7 @@ export default function SplinePage() {
       <hr className="heroDivider" />
 
       {/* 7 */}
-      <h3 className="heroSubTitleSm">7. Assign to Your Spline Preset</h3>
+      <h3 className="heroSubTitleSm">7. ASSIGN TO YOUR SPLINE PRESET</h3>
       <p className="heroText">Select the VolumetricAurora actor and click the &quot;Aurora Preset&quot; combo box.</p>
       {/*<StepImage src={img11} alt='Select VolumetricAurora actor and open "Aurora Preset" combo box' size="sm"/>*/}
 
@@ -142,7 +142,7 @@ export default function SplinePage() {
       <hr className="heroDivider" />
 
       {/* 8 */}
-      <h3 className="heroSubTitleSm">8. Final Check</h3>
+      <h3 className="heroSubTitleSm">8. FINAL CHECK</h3>
       <p className="heroText">That&apos;s it!</p>
       <StepImage src={img15} alt="Final result" />
     </section>

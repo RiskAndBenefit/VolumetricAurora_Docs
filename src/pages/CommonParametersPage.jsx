@@ -14,7 +14,7 @@ export default function CommonParametersPage() {
       <hr className="heroDivider heroDividerTop" />
 
       {/* CORE SETTINGS */}
-      <h2 className="heroSubTitle">Core Settings</h2>
+      <h2 className="heroSubTitle">CORE SETTINGS</h2>
       <p className="heroText">
         Fundamental parameters that control the basic appearance and behavior of all aurora types.
       </p>
@@ -59,7 +59,7 @@ export default function CommonParametersPage() {
       <hr className="heroDivider" />
 
       {/* COLOR SETTINGS */}
-      <h2 className="heroSubTitle">Color Settings</h2>
+      <h2 className="heroSubTitle">COLOR SETTINGS</h2>
       <p className="heroText">
         Control the color gradient of the aurora from bottom to top, creating realistic atmospheric color
         transitions.
@@ -100,7 +100,7 @@ export default function CommonParametersPage() {
       <hr className="heroDivider" />
 
       {/* POSITION AND SIZE */}
-      <h2 className="heroSubTitle">Position and Size</h2>
+      <h2 className="heroSubTitle">POSITION AND SIZE</h2>
       <p className="heroText">
         Define the physical dimensions and placement of the aurora in your world space.
       </p>
@@ -140,7 +140,7 @@ export default function CommonParametersPage() {
         </table>
       </div>
 
-      <h3 className="heroSubTitleSm">Edge Fade Settings</h3>
+      <h3 className="heroSubTitleSm">EDGE FADE SETTINGS</h3>
       <p className="heroText">
         Control how the aurora fades out at the edges of the defined area to create smooth boundaries.
       </p>
@@ -176,12 +176,12 @@ export default function CommonParametersPage() {
       <hr className="heroDivider" />
 
       {/* APPEARANCE */}
-      <h2 className="heroSubTitle">Appearance</h2>
+      <h2 className="heroSubTitle">APPEARANCE</h2>
       <p className="heroText">
         Advanced appearance settings for fine-tuning the aurora's visual style and enhancing realism.
       </p>
 
-      <h3 className="heroSubTitleSm">Film Grain</h3>
+      <h3 className="heroSubTitleSm">FILM GRAIN</h3>
       <p className="heroText">
         Adds subtle film grain noise for a more organic, less digital appearance. Minimal performance impact.
       </p>
@@ -210,7 +210,7 @@ export default function CommonParametersPage() {
         </table>
       </div>
 
-      <h3 className="heroSubTitleSm">Structure Coloring</h3>
+      <h3 className="heroSubTitleSm">STRUCTURE COLORING</h3>
       <p className="heroText">
         Applies additional color tinting to dense structural regions of the aurora, creating richer, more complex
         color palettes.
@@ -254,7 +254,7 @@ export default function CommonParametersPage() {
         </table>
       </div>
 
-      <h3 className="heroSubTitleSm">Tone Adjustment</h3>
+      <h3 className="heroSubTitleSm">TONE ADJUSTMENT</h3>
       <p className="heroText">
         Fine-tune the tone curve, contrast, and saturation of the aurora emission for precise color control.
       </p>
@@ -293,7 +293,7 @@ export default function CommonParametersPage() {
         </table>
       </div>
 
-      <h3 className="heroSubTitleSm">Emissive Structure</h3>
+      <h3 className="heroSubTitleSm">EMISSIVE STRUCTURE</h3>
       <p className="heroText">
         Enhances brightness on dense structural regions, creating dramatic bright bands and more defined aurora
         curtains.
@@ -336,12 +336,12 @@ export default function CommonParametersPage() {
       <hr className="heroDivider" />
 
       {/* USAGE TIPS */}
-      <h2 className="heroSubTitle">Usage Tips</h2>
+      <h2 className="heroSubTitle">USAGE TIPS</h2>
       <p className="heroText">
         Best practices for working with common parameters across all aurora types.
       </p>
 
-      <h3 className="heroSubTitleSm">Color Design</h3>
+      <h3 className="heroSubTitleSm">COLOR DESIGN</h3>
       <ul className="heroBullets">
         <li>
           <strong>Natural Color Progression:</strong> Natural auroras are typically brighter at the bottom (green/cyan)
@@ -357,7 +357,7 @@ export default function CommonParametersPage() {
         </li>
       </ul>
 
-      <h3 className="heroSubTitleSm">Balancing Intensity and Density</h3>
+      <h3 className="heroSubTitleSm">BALANCING INTENSITY AND DENSITY</h3>
       <ul className="heroBullets">
         <li>
           <strong>Faint Aurora:</strong> Increase Intensity first, then adjust Density if needed. High intensity with
@@ -372,7 +372,7 @@ export default function CommonParametersPage() {
         </li>
       </ul>
 
-      <h3 className="heroSubTitleSm">Edge Fade Strategy</h3>
+      <h3 className="heroSubTitleSm">EDGE FADE STRATEGY</h3>
       <ul className="heroBullets">
         <li>
           <strong>Radial Mode:</strong> Best for auroras centered around a point or when viewed from below.
@@ -387,7 +387,7 @@ export default function CommonParametersPage() {
         </li>
       </ul>
 
-      <h3 className="heroSubTitleSm">Performance Optimization</h3>
+      <h3 className="heroSubTitleSm">PERFORMANCE OPTIMIZATION</h3>
       <ul className="heroBullets">
         <li>
           <strong>Aurora Area Extent:</strong> Larger extent increases fill rate cost. Keep extent appropriate to your

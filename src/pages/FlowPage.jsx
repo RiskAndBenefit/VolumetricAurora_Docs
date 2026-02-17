@@ -80,13 +80,13 @@ export default function FlowPage() {
       <hr className="heroDivider heroDividerTop" />
 
       {/* BASIC SETTINGS */}
-      <h2 className="heroSubTitle">Basic Settings</h2>
+      <h2 className="heroSubTitle">BASIC SETTINGS</h2>
       <p className="heroText">
         Before working with the Aurora Elements Map and Control Points, this section explains the fundamental
         parameters and features of Flow Type auroras.
       </p>
 
-      <h3 className="heroSubTitleSm">Reset Button</h3>
+      <h3 className="heroSubTitleSm">RESET BUTTON</h3>
       <p className="heroText">Pressing this button restarts the aurora simulation from the beginning.</p>
 
       <StepImage
@@ -96,7 +96,7 @@ export default function FlowPage() {
         size="sm"
       />
 
-      <h3 className="heroSubTitleSm">Basic Parameters</h3>
+      <h3 className="heroSubTitleSm">BASIC PARAMETERS</h3>
 
       <div className="heroTableWrap">
         <table className="heroTable">
@@ -152,7 +152,7 @@ export default function FlowPage() {
         </table>
       </div>
 
-      <h3 className="heroSubTitleSm">Emitter Noise Parameters</h3>
+      <h3 className="heroSubTitleSm">EMITTER NOISE PARAMETERS</h3>
       <p className="heroText">
         These parameters add noise to particles emitted from the Aurora Elements Map, introducing natural randomness.
       </p>
@@ -185,7 +185,7 @@ export default function FlowPage() {
       <hr className="heroDivider" />
 
       {/* AURORA ELEMENTS MAP */}
-      <h2 className="heroSubTitle">Aurora Elements Map</h2>
+      <h2 className="heroSubTitle">AURORA ELEMENTS MAP</h2>
       <p className="heroText">
         The Aurora Elements Map is a texture that uses the R, G, and B color channels to define the following:
       </p>
@@ -222,7 +222,7 @@ export default function FlowPage() {
         size="md"
       />
 
-      <h3 className="heroSubTitleSm">Editing the Elements Map</h3>
+      <h3 className="heroSubTitleSm">EDITING THE ELEMENTS MAP</h3>
       <p className="heroText">
         When the Aurora uses a Flow Type Preset, the Edit Elements Map UI becomes available. Click the Edit Elements Map
         button to open the Elements Map editing interface.
@@ -268,7 +268,7 @@ export default function FlowPage() {
         </table>
       </div>
 
-      <h3 className="heroSubTitleSm">Brush Settings</h3>
+      <h3 className="heroSubTitleSm">BRUSH SETTINGS</h3>
 
       <StepImage
         src={BrushToolExample}
@@ -330,7 +330,7 @@ export default function FlowPage() {
         </table>
       </div>
 
-      <h3 className="heroSubTitleSm">Finalizing and Saving</h3>
+      <h3 className="heroSubTitleSm">FINALIZING AND SAVING</h3>
       <p className="heroText">
         As you paint on the canvas, the preview area updates in real time to show how the Elements Map affects the
         aurora.
@@ -382,9 +382,9 @@ export default function FlowPage() {
       <hr className="heroDivider" />
 
       {/* CAPTURE CURRENT STATE */}
-      <h2 className="heroSubTitle">Capture Current State</h2>
+      <h2 className="heroSubTitle">CAPTURE CURRENT STATE</h2>
 
-      <h3 className="heroSubTitleSm">Overview</h3>
+      <h3 className="heroSubTitleSm">OVERVIEW</h3>
       <p className="heroText">
         Flow Aurora <strong>starts its simulation from the initial state</strong> every time you launch the editor or
         run PIE (Play In Editor). This means particles begin from scratch and gradually evolve into the full aurora
@@ -402,7 +402,7 @@ export default function FlowPage() {
         that point in subsequent runs.
       </p>
 
-      <h3 className="heroSubTitleSm">How to Use Capture</h3>
+      <h3 className="heroSubTitleSm">HOW TO USE CAPTURE</h3>
 
       <p className="heroSectionLabel">1. Run Simulation to Desired State</p>
       <p className="heroText">In the editor, run the aurora and wait until it reaches the shape you want to save.</p>
@@ -451,13 +451,13 @@ export default function FlowPage() {
         <code className="heroInlineCode">\Plugins\VolumetricAurora\Content\Textures\FlowCheckpoints\</code>
       </p>
 
-      <h3 className="heroSubTitleSm">Result</h3>
+      <h3 className="heroSubTitleSm">RESULT</h3>
       <p className="heroText">
         Now when you restart the editor or run PIE, the aurora will <strong>appear immediately from the captured
         state</strong>.
       </p>
 
-      <h3 className="heroSubTitleSm">Tips</h3>
+      <h3 className="heroSubTitleSm">TIPS</h3>
       <ul className="heroBullets">
         <li>
           <strong>Included in Presets:</strong> Checkpoint Textures are saved with Aurora Presets, so the captured
@@ -472,7 +472,7 @@ export default function FlowPage() {
       <hr className="heroDivider" />
 
       {/* CONTROL POINTS */}
-      <h2 className="heroSubTitle">Control Points</h2>
+      <h2 className="heroSubTitle">CONTROL POINTS</h2>
       <p className="heroText">Control Points are elements that exert physical forces on nearby particles.</p>
 
       <p className="heroText">
@@ -483,7 +483,7 @@ export default function FlowPage() {
         <code>Detail Panel → Aurora → Preset Details → Flow → Control Points</code>
       </pre>
 
-      <h3 className="heroSubTitleSm">Common Properties</h3>
+      <h3 className="heroSubTitleSm">COMMON PROPERTIES</h3>
       <p className="heroText">All Control Points share the following properties:</p>
 
       <div className="heroTableWrap">
@@ -526,7 +526,7 @@ export default function FlowPage() {
         </table>
       </div>
 
-      <h3 className="heroSubTitleSm">Attenuation Properties</h3>
+      <h3 className="heroSubTitleSm">ATTENUATION PROPERTIES</h3>
       <p className="heroText">
         These properties are enabled when Range is set to Local. Each force type has its own prefixed set of these
         parameters.
@@ -563,7 +563,7 @@ export default function FlowPage() {
         </table>
       </div>
 
-      <h3 className="heroSubTitleSm">Force Application Behavior</h3>
+      <h3 className="heroSubTitleSm">FORCE APPLICATION BEHAVIOR</h3>
       <ul className="heroBullets">
         <li>
           Curl, Warp Types: when Range is Global, the force is applied uniformly across the entire aurora regardless of
@@ -578,7 +578,7 @@ export default function FlowPage() {
       <hr className="heroDivider" />
 
       {/* CONTROL POINT TYPES */}
-      <h2 className="heroSubTitle">Control Point Types</h2>
+      <h2 className="heroSubTitle">CONTROL POINT TYPES</h2>
       <p className="heroText">
         Each Control Point type applies different forces to nearby particles. Some types apply multiple forces
         simultaneously.
@@ -587,7 +587,7 @@ export default function FlowPage() {
       <DebugSpheres2D className="heroDebugViz" />
 
       {/* SOURCE */}
-      <h3 className="heroSubTitleSm">Source</h3>
+      <h3 className="heroSubTitleSm">SOURCE</h3>
       <p className="heroText">Pushes particles outward while generating new particles.</p>
 
       <div className="heroTableWrap">
@@ -612,7 +612,7 @@ export default function FlowPage() {
       </div>
 
       {/* SINK */}
-      <h3 className="heroSubTitleSm">Sink</h3>
+      <h3 className="heroSubTitleSm">SINK</h3>
       <p className="heroText">Pulls particles inward while destroying them.</p>
 
       <div className="heroTableWrap">
@@ -637,7 +637,7 @@ export default function FlowPage() {
       </div>
 
       {/* VORTEX */}
-      <h3 className="heroSubTitleSm">Vortex</h3>
+      <h3 className="heroSubTitleSm">VORTEX</h3>
       <p className="heroText">Rotates particles around the Control Point while fading them out.</p>
 
       <div className="heroTableWrap">
@@ -664,7 +664,7 @@ export default function FlowPage() {
       </div>
 
       {/* SPIRAL */}
-      <h3 className="heroSubTitleSm">Spiral</h3>
+      <h3 className="heroSubTitleSm">SPIRAL</h3>
       <p className="heroText">
         Pulls particles inward while rotating them, then fades them out. This is a combination of Sink and Vortex
         behavior.
@@ -696,7 +696,7 @@ export default function FlowPage() {
       </div>
 
       {/* DIPOLE */}
-      <h3 className="heroSubTitleSm">Dipole</h3>
+      <h3 className="heroSubTitleSm">DIPOLE</h3>
       <p className="heroText">
         Bends particle flow into a dipole-shaped field, similar to the magnetic field around the north and south poles
         of a magnet.
@@ -724,7 +724,7 @@ export default function FlowPage() {
       </div>
 
       {/* CURL */}
-      <h3 className="heroSubTitleSm">Curl</h3>
+      <h3 className="heroSubTitleSm">CURL</h3>
       <p className="heroText">
         Applies turbulence across the entire aurora, creating natural swirling motion.
       </p>
@@ -794,7 +794,7 @@ export default function FlowPage() {
       </div>
 
       {/* WARP */}
-      <h3 className="heroSubTitleSm">Warp</h3>
+      <h3 className="heroSubTitleSm">WARP</h3>
       <p className="heroText">
         Applies organic, flowing distortion patterns using Domain Warping. Similar to Curl, but capable of producing
         more complex and artistic motion.
@@ -901,7 +901,7 @@ export default function FlowPage() {
       </div>
 
       {/* EMITTER */}
-      <h3 className="heroSubTitleSm">Emitter</h3>
+      <h3 className="heroSubTitleSm">EMITTER</h3>
       <p className="heroText">Generates particles only, without applying any pushing force.</p>
 
       <div className="heroTableWrap">
@@ -922,7 +922,7 @@ export default function FlowPage() {
       </div>
 
       {/* ATTENUATOR */}
-      <h3 className="heroSubTitleSm">Attenuator</h3>
+      <h3 className="heroSubTitleSm">ATTENUATOR</h3>
       <p className="heroText">Removes particles only, without applying any pulling force.</p>
 
       <div className="heroTableWrap">
@@ -945,7 +945,7 @@ export default function FlowPage() {
       <hr className="heroDivider" />
 
       {/* QUICK REFERENCE */}
-      <h2 className="heroSubTitle">Quick Reference Table by Type</h2>
+      <h2 className="heroSubTitle">QUICK REFERENCE TABLE BY TYPE</h2>
 
       <div className="heroTableWrap">
         <table className="heroTable">
@@ -1039,13 +1039,13 @@ export default function FlowPage() {
       <hr className="heroDivider" />
 
       {/* USAGE TIPS */}
-      <h2 className="heroSubTitle">Usage Tips</h2>
+      <h2 className="heroSubTitle">USAGE TIPS</h2>
       <p className="heroText">
         This section explains practical techniques for creating visually appealing aurora shapes using the features
         described above.
       </p>
 
-      <h3 className="heroSubTitleSm">Shaping the Form</h3>
+      <h3 className="heroSubTitleSm">SHAPING THE FORM</h3>
       <p className="heroText">
         One of the most commonly observed aurora shapes is the curtain form. This tutorial aims to create a
         curtain-style aurora.
